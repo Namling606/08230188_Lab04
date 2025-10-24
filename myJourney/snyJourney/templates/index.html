@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Learning Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            margin: 0 10px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Learning Journey</h1>
+        <nav>
+            <a href="{% url 'index' %}">Home</a> |
+            <a href="{% url 'about_me' %}">About Me</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Welcome to My Journey</h2>
+        <p>
+            This page showcases my progress and reflections throughout my learning journey in Python and Django.
+            I began by understanding the basics of programming and gradually explored how web applications work.
+            Through hands-on projects, I’ve developed skills in HTML, CSS, and the Django framework.
+        </p>
+
+        <h3>What I Learned</h3>
+        <ul>
+            <li>How to set up a Django project and create apps</li>
+            <li>How to design and connect models, views, and templates (MVT)</li>
+            <li>How to use the Django admin interface effectively</li>
+            <li>How to push projects to GitHub using version control</li>
+        </ul>
+
+        <p>
+            This journey helped me understand how coding builds real-world solutions, and I’m excited to keep learning!
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 My Learning Journey</p>
+    </footer>
+
+</body>
+</html>
